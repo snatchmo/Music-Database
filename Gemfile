@@ -38,6 +38,10 @@ gem 'thin'
 #Easily add Bootstrap themes and elements
 gem 'starter_generators'
 
+gem 'awesome_print'
+
+gem 'annotate'
+
 group :development do
 
 # Quite assets
