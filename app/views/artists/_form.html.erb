@@ -11,13 +11,13 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
   <div class="field">
     <%= f.label :genre_id %><br>
-    <%= f.collection_select :genre_id, Genre.all, :id, :name %>
+    <%= f.collection_select :genre_id, Genre.all, :id, :name, {prompt: "select genre"}, {class: "form-control"} %>
   </div>
   <div class="actions">
     <%= f.submit %>
